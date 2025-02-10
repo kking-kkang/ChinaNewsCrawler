@@ -52,7 +52,7 @@ try:
 
     # 결과를 JSON 파일로 저장
     if results:
-        output_file = "./output/raw.gmw.json"
+        output_file = "raw_data/raw.gmw.json"
         with open(output_file, "w", encoding="utf-8") as file:
             json.dump(results, file, ensure_ascii=False, indent=4)
         print(f"검색 결과가 {output_file} 파일로 저장되었습니다.")

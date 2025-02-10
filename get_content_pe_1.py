@@ -4,7 +4,7 @@ import requests
 from charset_normalizer import from_bytes
 
 # JSON 파일 로드
-file_path = "./output/raw.huanqiu.json"
+file_path = "raw_data/raw.huanqiu.json"
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file)  # JSON 데이터 로드 (리스트 형식)
 

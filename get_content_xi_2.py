@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # JSON 파일 로드
-file_path = "./output/raw.people.json"
+file_path = "raw_data/raw.people.json"
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file)  # JSON 데이터 로드 (리스트 형식)
 
