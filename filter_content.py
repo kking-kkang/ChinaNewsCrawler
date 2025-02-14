@@ -12,7 +12,7 @@ with open(file_path, 'r', encoding='utf-8') as file:
 df = pd.DataFrame(data)
 
 # 본문 없는 데이터와 특정 키워드('三边', '三国', '三方', '三角', '同盟')가 포함된 데이터 필터링
-df = df[df['content'].notnull() & df['content'].str.contains('三边|三国|三方|三角|同盟', na=False)]
+df = df[df['content'].notnull() & df['content'].str.contains('"三边"|"三国"|"三方"|"三角"|"同盟"', na=False)]
 
 # 소스 통일
 df['source'] = '新华网'
